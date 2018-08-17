@@ -17,7 +17,7 @@
     {:status 200 :heders {"Content-Type" "application/json"} :body (json/write-str data)}
     ))
 
-(defn show-last-webhook [req]
+(defn show-last-webhook [_]
   {:status 200
    :headers {"Content-Type" "application/json"}
    :body (json/write-str @last-post)})
